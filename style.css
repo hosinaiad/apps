@@ -1,0 +1,402 @@
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,800;0,900;1,200;1,300;1,600&family=Roboto:wght@400;500&display=swap');
+    * {
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+    /* body {
+        background-color: #000016;
+    } */
+    /* nav, nav ul, nav li, nav ul a, .... */
+    
+    nav {
+        width: 60%;
+        /* text-align: center;
+    display: block; */
+    }
+    
+    nav ul {
+        float: left;
+        /* display: block; */
+        list-style-type: disc;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 40px;
+    }
+    
+    nav li {
+        display: inline-block;
+        line-height: 30px;
+        width: 100px;
+        text-align: center;
+    }
+    
+    nav a {
+        /* color: white; */
+        font-weight: bold;
+        font-size: 20px;
+        text-decoration: none;
+    }
+    /* .............................................. */
+    
+    #nag {
+        float: right;
+        /* display: flex;
+        justify-content: center; */
+        width: 55px;
+        border-radius: 50%;
+        padding: 15px 15px 15px 15px;
+    }
+    
+    #divId {
+        width: 100%;
+        height: 33px;
+        background-color: #000016;
+    }
+    
+    header {
+        border-radius: 22px;
+        background-color: #fafafa;
+        width: 80%;
+        position: fixed;
+        z-index: 999;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 200px;
+    }
+    
+    .logo {
+        text-decoration: none;
+        color: #000016;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.8em;
+        /* We put value em, em >> relative to body default font-size, to translate from "em to px" >> * 16, in browser the font default is 1em = 16px, as example if we specific body font-size: anyNumber px; then it's become default. 
+    Ex: 1.8em *16 = 00.
+    */
+    }
+    
+    .navigation a {
+        color: #000016;
+        text-decoration: none;
+        font-size: 1.3em;
+        font-weight: 600;
+        padding-left: 30px;
+    }
+    
+    .navigation a:hover {
+        color: #601cfc;
+        border-right: 1px solid#000016;
+        border-bottom: 1px solid#000016;
+        padding: 5px 8px 8px 8px;
+        /* padding-left: 8px; */
+        border-radius: 15px;
+        margin-left: 22px;
+    }
+    
+    section {
+        padding: 100px 200px;
+    }
+    
+    .main {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        background-color: #000016;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        /* To fixed photo and didn't allow to move. */
+    }
+    
+    .photo img {
+        width: 322px;
+        height: 322px;
+        border: 22px double rgb(211, 195, 22);
+        border-radius: 50%;
+        margin-top: 40px;
+        margin-left: 144px;
+        /* padding: 55px; */
+    }
+    
+    .main h2 {
+        color: rgb(211, 195, 22);
+        font-size: 1.4em;
+        font-weight: 500;
+    }
+    
+    .main h2 span {
+        color: rgb(211, 195, 22);
+        font-size: 3em;
+        font-weight: 600;
+        display: inline-block;
+        margin-top: 10px;
+    }
+    
+    .main h3 {
+        color: rgb(211, 195, 22);
+        font-size: 2em;
+        font-weight: 700;
+        letter-spacing: 1px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    
+    .main-btn {
+        color: rgb(211, 195, 22);
+        background-color: #000016;
+        text-decoration: none;
+        font-size: 1.1em;
+        font-weight: 600;
+        display: inline-block;
+        /* inline-block important to run padding & margin-bottom below. */
+        padding: 0.9375em 2.187em;
+        /* top  bottom */
+        /* number above em *16 = px. */
+        letter-spacing: 1px;
+        border-radius: 15px;
+        border-right: 1px solid white;
+        border-bottom: 1px solid white;
+        margin-bottom: 40px;
+        transition: 0.7s ease;
+    }
+    
+    .main-btn:hover {
+        color: #fff;
+        background-color: #000018;
+        transform: scale(1.1);
+    }
+    
+    .social-icons a {
+        color: #fafafa;
+        /* background-color: #3a6cf4; */
+        font-size: 2em;
+        padding-right: 7px;
+        border-radius: 35px;
+    }
+    
+    .title {
+        display: flex;
+        justify-content: center;
+        color: #000016;
+        font-size: 2.2em;
+        font-weight: 800;
+        margin-bottom: 3px;
+    }
+    
+    .content {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .card {
+        /* background-color: #fff; */
+        width: 17.25em;
+        box-shadow: 0 5px 25px rgba(1 1 1/15%);
+        /* box-shadow: 0 5px 25px rgba(1 1 1/100%); */
+        /* first value: Shadow top & bottom, second value: left >> - negative value & right, blurred value (غير واضح), color value */
+        border-radius: 10px;
+        padding: 25px;
+        margin: 15px;
+        transition: 0.7s ease;
+    }
+    
+    .card:hover {
+        transform: scale(1.1);
+        /* transition: 0.7s ease; */
+    }
+    
+    .icon {
+        color: #000016;
+        font-size: 8em;
+        text-align: center;
+    }
+    
+    .info {
+        text-align: center;
+    }
+    
+    .info h3 {
+        color: #000016;
+        font-size: 1.2em;
+        font-weight: 700;
+        margin: 10px;
+    }
+    
+    .projects {
+        background-color: #000016;
+    }
+    
+    .projects .content {
+        margin-top: 30px;
+    }
+    
+    .project-card {
+        background-color: #fff;
+        border: 2px solid white;
+        min-height: 14em;
+        width: 17em;
+        overflow: hidden;
+        border-radius: 10px;
+        margin: 20px;
+        transition: 0.7s ease;
+    }
+    
+    .project-card:hover {
+        transform: scale(1.1);
+    }
+    
+    .project-card:hover .project-image {
+        opacity: 0.9;
+    }
+    
+    .project-image img {
+        width: 100%;
+    }
+    
+    .project-info {
+        padding: 1em;
+    }
+    
+    .project-category {
+        font-size: 0.9em;
+        color: #000;
+        /* font-weight: bold; */
+    }
+    
+    .project-title {
+        display: flex;
+        justify-content: space-between;
+        text-transform: uppercase;
+        font-weight: 800;
+        margin-top: 10px;
+    }
+    
+    .title-0 {
+        color: white;
+        text-align: center;
+        font-size: 36px;
+    }
+    
+    .more-details {
+        text-decoration: none;
+        color: #3a6cf4;
+    }
+    
+    .more-details:hover {
+        color: #601cfc;
+    }
+    
+    .icon img {
+        font-size: 5em;
+    }
+    
+    .contact .info h3 {
+        color: black;
+        font-weight: bold;
+    }
+    
+    .contact .info p {
+        font-size: 1.3em;
+    }
+    
+    footer {
+        background-color: #000016;
+        color: white;
+        padding: 2em;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .social-icons-footer a i {
+        color: white;
+        /* background-color: #3a6cf4; */
+        font-size: 1.7em;
+        /* padding: 0 2px 0 0; */
+        border-radius: 22px;
+    }
+    
+    .footer-title {
+        font-size: 1.3em;
+        font-weight: 500;
+    }
+    
+    .footer-title span {
+        color: rgb(211, 195, 22);
+    }
+    /* .................................... */
+    /* ........ @media ..... To get responsive website ........ */
+    
+    @media (max-width:1023px) {
+        header {
+            padding: 12px 20px
+        }
+        .navigation a {
+            padding-left: 10px
+        }
+        .title {
+            font-size: 1.8em;
+        }
+        section {
+            padding: 80px 20px;
+        }
+        .main-content h2 {
+            font-size: 1em;
+        }
+        .main-content h3 {
+            font-size: 1.6em;
+        }
+        .content {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    
+    @media (max-width:641px) {
+        body {
+            font-size: 12px;
+        }
+        .main-content h2 {
+            font-size: 0.8em;
+        }
+        .main-content h3 {
+            font-size: 1.4em;
+        }
+    }
+    
+    @media (max-width:300px) {
+        body {
+            font-size: 10px;
+        }
+        .main-content h2 {
+            font-size: 0.8em;
+        }
+        .main-content h3 {
+            font-size: 1.4em;
+            /* On screen less than 300px, 1m = 10px, but in default 1em = 16px */
+        }
+        .social-icons-footer a {
+            font-size: 1em;
+            padding: 7px;
+        }
+    }
+    
+    .main-content h3 {
+        font-size: 1.4em;
+        /* On screen less than 300px, 1m = 10px, but in default 1em = 16px */
+    }
+    
+    .social-icons-footer a {
+        font-size: 1em;
+        font-size: 1em;
+        padding: 7px;
+    }
